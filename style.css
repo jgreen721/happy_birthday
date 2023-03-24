@@ -308,12 +308,21 @@ h1 {
   position: absolute;
   top: -35px;
   transition: 0.5s ease;
-  animation: ignite 1s 1.5s forwards;
+  animation: ignite 9.5s 1.5s forwards;
   transform: scale(0);
   transform-origin: bottom;
 }
 
 @keyframes ignite {
+  10% {
+    transform: scale(1);
+  }
+  55% {
+    transform: rotate(20deg) scale(1.1);
+  }
+  65% {
+    transform: rotate(20deg) scale(0);
+  }
   100% {
     transform: scale(1);
   }
@@ -531,7 +540,7 @@ footer {
   border-radius: 100px;
   height: 20px;
   height: 0px;
-  animation: openmouth 7s 5s forwards;
+  animation: openmouth 4.5s 5s forwards;
 }
 
 @keyframes openmouth {
